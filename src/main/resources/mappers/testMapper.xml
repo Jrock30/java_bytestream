@@ -16,7 +16,7 @@
     <select id="selectData" resultType="string">
         select html_data
           from char_test
-        where id = 6
+        where id = 13
     </select>
 
 </mapper>
