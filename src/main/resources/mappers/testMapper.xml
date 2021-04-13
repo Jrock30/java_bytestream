@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.jrock.bytecode.mapper.TestMapper">
+
+    <insert id="insertData" parameterType="string">
+        insert into char_test
+        (html_data) values (#{data})
+    </insert>
+
+    <insert id="insertData2" parameterType="string">
+        insert into char_test
+            (html_data) values (#{data})
+    </insert>
+
+    <select id="selectData" resultType="string">
+        select html_data
+          from char_test
+        where id = 6
+    </select>
+
+</mapper>
